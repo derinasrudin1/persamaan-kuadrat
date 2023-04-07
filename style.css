@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppin', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: brown;
+}
+h1 {
+  color: rgb(201, 193, 236);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: rgb(201, 193, 236);
+}
+
+.input-grup {
+  position: relative;
+  margin: 5px 0;
+}
+.input-grup label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-grup input {
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+  background: transparent;
+  border: 1.2px solid #fff;
+  outline: none;
+  border-radius: 5px;
+}
+.input-grup input:focus ~ label,
+.input-grup input:valid ~ label {
+  top: 0;
+  font-size: 12px;
+  background: brown;
+}
+.hitung {
+  margin-top: 25px;
+  width: 100px;
+  height: 30px;
+  background-color: #00ff91;
+  cursor: pointer;
+  margin-bottom: 45px;
+}
+.hasil {
+  color: #fff;
+  font-size: 20px;
+}
