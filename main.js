@@ -8,18 +8,17 @@ ngitung.addEventListener('click', function () {
   let diskriminan = Math.pow(b, 2) - 4 * a * c;
   let d = Math.sqrt(diskriminan);
   let pembagi = 2 * a;
-  if (d > 0) {
+  if (diskriminan > 0) {
     let x1 = (-b + d) / pembagi;
     let x2 = (-b - d) / pembagi;
     hasil1.innerHTML = 'Nilai x1 nya adalah' + ' ' + x1;
     hasil2.innerHTML = 'Nilai x2 nya adalah' + ' ' + x2;
-  } else if (d == 0) {
+  } else if (diskriminan == 0) {
     let x1 = (-b + d) / pembagi;
     let x2 = x1;
     hasil1.innerHTML = 'Nilai x1 nya adalah' + ' ' + x1;
     hasil2.innerHTML = 'Nilai x2 nya adalah' + ' ' + x2;
-  } else if (d < 0) {
-    hasil1.innerHTML = 'Nilai x1 nya adalah akar imajiner';
-    hasil2.innerHTML = 'Nilai x2 nya adalah akar imajiner';
+  } else if (diskriminan < 0) {
+    hasil1.innerHTML = 'Nilai x1,x2 nya adalah akar imajiner  ' + -b + '±' + '√' + diskriminan + '/' + pembagi;
   }
 });
