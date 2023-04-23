@@ -4,29 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeriNasrudin</title>
+    <title>Persamaan Kuadrat</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image" href="img/icon.ico" />
   </head>
   <body>
-    <div class="teks">
-      <h1>Persamaan Kuadrat</h1>
-      <h2>ax <sup>2</sup> + bx + c = 0</h2>
+    <div class="container">
+      <div class="teks">
+        <h1>Persamaan Kuadrat</h1>
+        <h2>ax <sup>2</sup> + bx + c = 0</h2>
+      </div>
+
+      <div class="input-grup">
+        <input id="nilai1" type="number" required />
+        <label for="">Masukan nilai a</label>
+      </div>
+      <div class="input-grup">
+        <input id="nilai2" type="number" required />
+        <label for="">Masukan nilai b</label>
+      </div>
+      <div class="input-grup">
+        <input id="nilai3" type="number" required />
+        <label for="">Masukan nilai c</label>
+      </div>
+      <button id="hitung" class="hitung">Hitung</button>
+
+      <span id="hasil1" class="hasil"></span>
+      <span id="hasil2" class="hasil"></span>
+      <button id="reset" type="reset" onclick="refres()">Reset</button>
+      <span class="copy">Copyright © <a href="wa.me/6289687598053">Deri_Nasrudin</a></span>
     </div>
-    <div class="input-grup">
-      <input id="nilai1" type="number" required />
-      <label for="">Masukan nilai a</label>
-    </div>
-    <div class="input-grup">
-      <input id="nilai2" type="number" required />
-      <label for="">Masukan nilai b</label>
-    </div>
-    <div class="input-grup">
-      <input id="nilai3" type="number" required />
-      <label for="">Masukan nilai c</label>
-    </div>
-    <button id="hitung" class="hitung">Hitung</button>
-    <span id="hasil1" class="hasil"></span>
-    <span id="hasil2" class="hasil"></span>
 
     <script src="main.js"></script>
   </body>
