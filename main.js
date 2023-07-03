@@ -25,7 +25,7 @@ ngitung.addEventListener("click", () => {
     hasil2.innerHTML = "Nilai \\(x_2\\) nya adalah " + x1;
     MathJax.typeset([hasil1, hasil2]);
   } else {
-    hasil1.innerHTML = `Nilai \\(x_1\\), \\(x_2\\) nya adalah akar imajiner -${b} \\(\\pm\\) \\(\\sqrt{${diskriminan}\\over {${pembagi}}}\\)`;
+    hasil1.innerHTML = `Nilai \\(x_1\\), \\(x_2\\) nya adalah akar imajiner ${-b} \\(\\pm\\) \\(\\sqrt{${diskriminan}\\over {${pembagi}}}\\)`;
     MathJax.typeset([hasil1]);
   }
 });
