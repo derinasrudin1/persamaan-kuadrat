@@ -8,25 +8,30 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image" href="img/icon.ico" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="teks">
         <h1>Persamaan Kuadrat</h1>
-        <h2>ax <sup>2</sup> + bx + c = 0</h2>
+        <h2>
+          \(a \ne 0\) <br />
+          \(ax^2 + bx + c = 0\)
+        </h2>
       </div>
 
       <div class="input-grup">
         <input id="nilai1" type="number" required />
-        <label for="">Masukan nilai a</label>
+        <label for="">Masukan nilai \(a\)</label>
       </div>
       <div class="input-grup">
         <input id="nilai2" type="number" required />
-        <label for="">Masukan nilai b</label>
+        <label for="">Masukan nilai \(b\)</label>
       </div>
       <div class="input-grup">
         <input id="nilai3" type="number" required />
-        <label for="">Masukan nilai c</label>
+        <label for="">Masukan nilai \(c\) </label>
       </div>
       <button id="hitung" class="hitung">Hitung</button>
 
